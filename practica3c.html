@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Condicional</title>
+</head>
+<body>
+    <p>Ingresar 2 numeros y saber cual es el mayor o si son iguales</p>
+    <div id="salida"></div>
+    <script>
+        let num1, num2;
+        
+        num1 = parseInt(window.prompt("Ingresa el primer numero", "0"));
+        num2 = parseInt(window.prompt("Ingresa el segundo numero", "0"));
+        
+        if(num1 > num2){
+            resultado = " el mayor es el primero";
+        }else if(num2 > num1){
+            resultado = " el mayor es el segundo"
+        }else if(num1 == num2){
+            resultado = " los numeros son iguales";
+        }
+
+        document.getElementById("salida").innerHTML = (`<h3>${resultado}</h3>`);
+    </script>
+
+</body>
+</html>

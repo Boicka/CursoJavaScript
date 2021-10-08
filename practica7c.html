@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional 7</title>
+</head>
+<body>
+    <p>Ingresa numeros menores a 10 sino termina el programa</p>
+    <script>
+        let num = 1;
+        let dato;
+
+        while(num < 10){
+            dato = prompt("Ingresa un numero menor a 10", '');
+            num = parseInt(dato);
+
+            document.write(` ${num} <br>`);
+        }
+
+        document.write("Ingresaste un valor mayor o igual a 10");
+    </script>
+    
+</body>
+</html>

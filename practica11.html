@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica 10</title>
+    <title>Practica 11</title>
 </head>
 <body>
-    <p>Ingresando 2 numeros y mostrar el resultado en pantalla</p>
+    <p>Ingresando 2 numeros y mostrar el resultado de la resta y multiplicación en pantalla</p>
     <div id="salida"></div>
+    <br>
+    <div id="salida2"></div>
     <script>
         let num1, num2;
 
         num1 = parseInt(window.prompt("Ingrese el valor 1","0"));
         num2 = parseInt(window.prompt("Ingrese el valor 2","0"));
         
-        let resultado = num1 - num2;
+        let resta = num1 - num2;
+        let mult = num1 * num2;
 
-        document.getElementById("salida").innerHTML = (`La resta es ${resultado}`);
+        document.getElementById("salida").innerHTML = (`La resta es ${resta}`);
+        document.getElementById("salida2").innerHTML = (`La multiplicacion es ${mult}`);
     </script>
 </body>
 </html>

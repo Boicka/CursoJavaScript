@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional 2</title>
+</head>
+<body>
+    <p>Ingresar 3 calificaciones, si la media es mayor o igual a 5 es 
+        aprobatorio sino es no aprobado</p>
+    <script>
+        let cal1, cal2, cal3, media;
+
+        cal1 = parseInt(window.prompt("Ingrese la calificacion 1"));
+        cal2 = parseInt(window.prompt("Ingrese la calificacion 2"));
+        cal3 = parseInt(window.prompt("Ingrese la calificacion 3"));
+
+        media = (cal1+cal2+cal3)/3;
+
+        if(media >=5){
+            resul = " Aprobado ";
+        }else{
+            resul = " No Aprobado ";
+        }
+
+        document.write(`<h3>La nota final es ${resul}</h3>`);
+        
+    </script>
+    
+</body>
+</html>

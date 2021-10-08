@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional if</title>
+</head>
+<body>
+    <script>
+        let num1, num2, resultado;
+
+        num1 = parseInt(window.prompt("Primer numero ?","0"));
+        num2 = parseInt(window.prompt("Segundo numero ?","0"));
+
+        if(num1 > num2){
+            resultado = " el primero";
+        }else{
+            resultado = " el segundo";
+        }
+
+        document.write(` <h3>El mayor es ${resultado}</h3>`);
+    </script>
+</body>
+</html>
